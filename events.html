@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EventEase | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="portfolio.html">Portfolio</a> 
+        <a href="events.html">Booking</a>
+         <a href="about.html">About</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+    <h2>Book Your Ticket</h2>
+    <form id="bookingForm">
+        <label for="custName">Magacaaga:</label>
+        <input type="text" id="custName" placeholder="Magaca oo buuxa" required>
+        
+        <label for="eventChoice">Dooro Event-ka:</label>
+        <select id="eventChoice">
+            <option value="50">Football Final - $50</option>
+            <option value="30">Concert Night - $30</option>
+            <option value="15">Movie Premiere - $15</option>
+        </select>
+        
+        <label for="ticketQty">Tirada (Max 10):</label>
+        <input type="number" id="ticketQty" placeholder="0" min="1" max="10">
+        
+        <button type="button" id="bookBtn" onclick="processBooking()">Xisaabi & Book-gareey</button>
+    </form>
+    
+    <div id="result" class="message"></div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
